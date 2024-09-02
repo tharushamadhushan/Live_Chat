@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="523.0" prefWidth="311.0" style="-fx-background-color: white;" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.liveChat.controller.LoginFormController">
+   <children>
+      <TextField fx:id="txtUserName" layoutX="59.0" layoutY="293.0" onAction="#txtUserNameOnAction" prefHeight="35.0" prefWidth="238.0" promptText="UserName" styleClass="edge-button" stylesheets="@../style/style.css" />
+      <JFXButton layoutX="47.0" layoutY="410.0" onAction="#loginBtnOnAction" prefHeight="42.0" prefWidth="81.0" text="Login">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <PasswordField fx:id="txtPassword" layoutX="59.0" layoutY="342.0" onAction="#txtPasswordOnAction" prefHeight="35.0" prefWidth="238.0" promptText="Password" styleClass="edge-button" stylesheets="@../style/style.css" />
+      <JFXButton layoutX="189.0" layoutY="410.0" onAction="#loginBtnOnAction" prefHeight="42.0" prefWidth="81.0" text="Sing in">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+      <ImageView fitHeight="171.0" fitWidth="171.0" layoutX="18.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/chat.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="112.0" layoutY="200.0" text="LOGIN">
+         <font>
+            <Font name="Georgia Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="492.0" text="\@tm">
+         <font>
+            <Font name="Garamond" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="28.0" fitWidth="32.0" layoutX="18.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-user.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="32.0" layoutX="18.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/icons8-password.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
